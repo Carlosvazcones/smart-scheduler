@@ -28,9 +28,7 @@ def create_task(task: Task):
 
 @app.get("/weather/{city}")
 def weather_city(city: str):
-    """
-    Devuelve datos de clima formateados para la ciudad indicada.
-    """
+    
     data = get_weather_for_city(city)
     return {
         "city": city,
