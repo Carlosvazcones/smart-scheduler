@@ -105,6 +105,28 @@ URL de la API: http://localhost:8000
 
 URL del Frontend: http://localhost:3000 
 
+## Estructura del repo
+smart-scheduler/
+├── .gitignore
+├── README.md
+├── Dockerfile
+├── docker-compose.yml
+├── requirements.txt
+├── firebase-service-account.json ← ¡NO subir! (está en .gitignore)
+├── app/ ← Backend FastAPI
+│ ├── main.py
+│ └── services/
+│ ├── weather.py
+│ └── score.py
+├── tests/ ← Pruebas unitarias con pytest
+│ ├── test_api.py
+│ └── test_score.py
+└── frontend-simple/ ← Archivos estáticos (HTML, JS, CSS)
+├── index.html
+├── main.js
+└── styles.css
+
+
 * **Repositorio**: Estructura con carpetas `app/`, `frontend/`, `docker-compose.yml`, `Dockerfile` y `requirements.txt`.
 * **Documentación**: Este README.md.
 
