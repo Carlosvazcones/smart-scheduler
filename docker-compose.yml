@@ -1,0 +1,29 @@
+# C:\Users\Zona Informatica\Documents\PROYECTOS\smart-scheduler\docker-compose.yml
+
+# (Opcionalmente, puedes eliminar esta línea si da warning)
+# version: '3.8'
+
+services:
+  web:
+    build:
+      context: .               # la carpeta actual, donde está este archivo y tu Dockerfile
+      dockerfile: Dockerfile
+    image: smart-scheduler-web:latest
+    ports:
+      - "8000:8000"
+    command: >
+      uvicorn app.main:app
+      --host 0.0.0.0
+      --port 8000
+      --reload
+
+  frontend:
+    build:
+      context: ../frontend-simple  # ruta relativa hasta la carpeta de tu front
+      dockerfile: Dockerfile
+    image: scheduler-frontend:latest
+    ports:
+      - "3000:80"
+    depends_on:
+      - web
+  
