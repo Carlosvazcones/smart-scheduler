@@ -86,13 +86,7 @@ La arquitectura está dividida en dos componentes principales:
 * **Formulario**: Elemento `<form id="task-form">` con listeners en JS.
 * **Presentación**: Lista en `<ul id="task-list">` y resultado de score en `<div id="score-result">`.
 
-### Ventajas de no usar Angular
-
-* **Ligereza**: No se requiere compilación o herramientas complejas.
-* **Rapidez de desarrollo**: Se centra en JavaScript nativo y HTML/CSS.
-* **Transparencia**: Fácil de entender la interacción directa con la API.
-
----
+#POR QUE NO USE ANGULAR?
 
 ## Errores y decisiones de diseño
 
