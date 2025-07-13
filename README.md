@@ -95,6 +95,15 @@ Durante el desarrollo se evaluó usar Angular para el frontend, pero se presenta
 ---
 
 ## Entrega del proyecto
+Entrega del proyecto
+
+Repositorio Backend: https://github.com/Crloavazcones/smart-scheduler
+
+Repositorio Frontend: https://github.com/Carlosvazcones/scheduler-frontend
+
+URL de la API: http://localhost:8000 
+
+URL del Frontend: http://localhost:3000 
 
 * **Repositorio**: Estructura con carpetas `app/`, `frontend/`, `docker-compose.yml`, `Dockerfile` y `requirements.txt`.
 * **Documentación**: Este README.md.
