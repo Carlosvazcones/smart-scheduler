@@ -1,0 +1,34 @@
+<h2>Create Task</h2>
+<form #f="ngForm" (ngSubmit)="onSubmit(f)">
+  <div>
+    <label>Title</label>
+    <input name="title" [(ngModel)]="task.title" required />
+  </div>
+  <div>
+    <label>Description</label>
+    <textarea name="description" [(ngModel)]="task.description" required></textarea>
+  </div>
+  <div>
+    <label>City</label>
+    <input name="city" [(ngModel)]="task.city" required />
+  </div>
+  <div>
+    <label>Temp Min</label>
+    <input type="number" name="temp_min" [(ngModel)]="task.temp_min" />
+  </div>
+  <div>
+    <label>Temp Max</label>
+    <input type="number" name="temp_max" [(ngModel)]="task.temp_max" />
+  </div>
+  <div>
+    <label>
+      <input type="checkbox" name="rain" [(ngModel)]="task.rain" />
+      Rain?
+    </label>
+  </div>
+  <div>
+    <label>Wind</label>
+    <input type="number" name="wind" [(ngModel)]="task.wind" />
+  </div>
+  <button type="submit">Save</button>
+</form>

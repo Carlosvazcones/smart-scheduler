@@ -1,0 +1,8 @@
+<h2>Tasks</h2>
+<button routerLink="/tasks/new">New Task</button>
+<ul>
+  <li *ngFor="let t of tasks">
+    <strong>{{ t.title }}</strong>
+    <button (click)="viewScore(t.id)">Score</button>
+  </li>
+</ul>
